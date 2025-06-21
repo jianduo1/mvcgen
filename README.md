@@ -1,10 +1,17 @@
-# MVCGen
+<div align="center">
+  <h1>MVCGen</h1>
+  <strong>基于 LangChain 的智能 MVC 代码生成器</strong>
+  <br>
+  <p>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a>
+    <a href="https://jianduo1.github.io/mvcgen/"><img src="https://img.shields.io/badge/docs-latest-blue.svg" alt="Docs"></a>
+    <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="Python Version"></a>
+    <img src="https://img.shields.io/badge/LangChain-green.svg" alt="LangChain">
+    <a href="https://pypi.org/project/mvcgen/"><img src="https://img.shields.io/badge/pypi-coming%20soon-orange.svg" alt="PyPI"></a>
+  </p>
+</div>
 
-中文 | [English](README_en.md)
-
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![Docs: Latest](https://img.shields.io/badge/docs-latest-blue.svg) ![Python](https://img.shields.io/badge/python-3.9+-blue.svg) ![LangChain](https://img.shields.io/badge/LangChain-green.svg)
-
-一个基于 LangChain 的智能 MVC 代码生成器，支持自然语言描述生成 Web 应用代码。
+[中文](README.md) | [English](README_en.md)
 
 **MVCGen** 追求智能、高效、易用，适合快速原型开发、代码生成、自动化开发等场景。
 

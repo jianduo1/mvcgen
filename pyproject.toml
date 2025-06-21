@@ -50,6 +50,7 @@ dev-dependencies = [
     "mkdocstrings[python]>=0.24.0",
     "mkdocs-git-revision-date-localized-plugin>=1.2.0",
     "mkdocs-minify-plugin>=0.7.0",
+    "ghp-import>=2.1.0",
     "build>=1.2.2.post1",
     "twine>=6.1.0",
 ]
@@ -62,9 +63,10 @@ format-check = "black --check ."
 lint = "flake8 ."
 sort = "isort ."
 
-# 文档构建
+# 文档构建与部署
 docs-build = "mkdocs build"
 docs-serve = "mkdocs serve"
+docs-deploy = "ghp-import site -p -m 'Deploy documentation to GitHub Pages' -r origin"
 
 # 构建和发布
 build = "python -m build"
@@ -75,11 +77,11 @@ upload-test = "twine upload --repository testpypi dist/*"
 upload = "twine upload dist/*"
 
 [project.urls]
-Homepage = "https://github.com/your-username/mvcgen"
-Documentation = "https://your-username.github.io/mvcgen"
-Repository = "https://github.com/your-username/mvcgen.git"
-Issues = "https://github.com/your-username/mvcgen/issues"
-Changelog = "https://github.com/your-username/mvcgen/releases"
+Homepage = "https://github.com/jianduo1/mvcgen"
+Documentation = "https://jianduo1.github.io/mvcgen"
+Repository = "https://github.com/jianduo1/mvcgen.git"
+Issues = "https://github.com/jianduo1/mvcgen/issues"
+Changelog = "https://github.com/jianduo1/mvcgen/releases"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

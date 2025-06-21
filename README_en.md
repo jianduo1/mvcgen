@@ -1,10 +1,17 @@
-# MVCGen
+<div align="center">
+  <h1>MVCGen</h1>
+  <strong>An intelligent MVC code generator based on LangChain</strong>
+  <br>
+  <p>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a>
+    <a href="https://jianduo1.github.io/mvcgen/"><img src="https://img.shields.io/badge/docs-latest-blue.svg" alt="Docs"></a>
+    <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="Python Version"></a>
+    <img src="https://img.shields.io/badge/LangChain-green.svg" alt="LangChain">
+    <a href="https://pypi.org/project/mvcgen/"><img src="https://img.shields.io/badge/pypi-coming%20soon-orange.svg" alt="PyPI"></a>
+  </p>
+</div>
 
 [中文](README.md) | English
-
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![Docs: Latest](https://img.shields.io/badge/docs-latest-blue.svg) ![Python](https://img.shields.io/badge/python-3.9+-blue.svg) ![LangChain](https://img.shields.io/badge/LangChain-green.svg)
-
-An intelligent MVC code generator based on LangChain, supporting natural language description to generate Web application code.
 
 **MVCGen** pursues intelligence, efficiency, and ease of use, suitable for rapid prototyping, code generation, and automated development scenarios.
 
