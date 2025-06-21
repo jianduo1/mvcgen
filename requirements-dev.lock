@@ -19,6 +19,7 @@ anyio==4.9.0
     # via openai
     # via starlette
 babel==2.17.0
+    # via mkdocs-git-revision-date-localized-plugin
     # via mkdocs-material
 backrefs==5.8
     # via mkdocs-material
@@ -37,6 +38,8 @@ click==8.2.1
 colorama==0.4.6
     # via griffe
     # via mkdocs-material
+csscompressor==0.9.5
+    # via mkdocs-minify-plugin
 distro==1.9.0
     # via openai
 docutils==0.21.2
@@ -46,11 +49,17 @@ fastapi==0.115.13
 flake8==7.3.0
 ghp-import==2.1.0
     # via mkdocs
+gitdb==4.0.12
+    # via gitpython
+gitpython==3.1.44
+    # via mkdocs-git-revision-date-localized-plugin
 griffe==1.7.3
     # via mkdocstrings-python
 h11==0.16.0
     # via httpcore
     # via uvicorn
+htmlmin2==0.1.13
+    # via mkdocs-minify-plugin
 httpcore==1.0.9
     # via httpx
 httpx==0.28.1
@@ -80,6 +89,8 @@ jinja2==3.1.6
     # via mkdocstrings
 jiter==0.10.0
     # via openai
+jsmin==3.0.1
+    # via mkdocs-minify-plugin
 jsonpatch==1.33
     # via langchain-core
 jsonpointer==3.0.0
@@ -127,16 +138,20 @@ mergedeep==1.3.4
     # via mkdocs-get-deps
 mkdocs==1.6.1
     # via mkdocs-autorefs
+    # via mkdocs-git-revision-date-localized-plugin
     # via mkdocs-material
+    # via mkdocs-minify-plugin
     # via mkdocstrings
 mkdocs-autorefs==1.4.2
     # via mkdocstrings
     # via mkdocstrings-python
 mkdocs-get-deps==0.2.0
     # via mkdocs
+mkdocs-git-revision-date-localized-plugin==1.4.7
 mkdocs-material==9.6.14
 mkdocs-material-extensions==1.3.1
     # via mkdocs-material
+mkdocs-minify-plugin==0.8.0
 mkdocstrings==0.29.1
     # via mkdocstrings-python
 mkdocstrings-python==1.16.12
@@ -206,6 +221,7 @@ python-dateutil==2.9.0.post0
 python-dotenv==1.1.0
     # via mvcgen
 pytz==2025.2
+    # via mkdocs-git-revision-date-localized-plugin
     # via tortoise-orm
 pyyaml==6.0.2
     # via langchain-core
@@ -235,6 +251,8 @@ rich==14.0.0
     # via twine
 six==1.17.0
     # via python-dateutil
+smmap==5.0.2
+    # via gitdb
 sniffio==1.3.1
     # via anyio
     # via openai
