@@ -1,0 +1,104 @@
+[project]
+name = "mvcgen"
+version = "0.1.0"
+description = "一个基于 LangGraph 的智能体框架，支持自然语言数据库操作和 MVC 模式生成"
+authors = [
+    { name = "mvcgen", email = "mvcgen@example.com" }
+]
+dependencies = [
+    "langchain-core>=0.1.0",
+    "langchain-openai>=0.1.0",
+    "langgraph>=0.1.0",
+    "tortoise-orm>=0.20.0",
+    "fastapi>=0.100.0",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "uvicorn>=0.20.0",
+]
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["agent", "langgraph", "database", "mvc", "nlp", "ai"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Database",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "flake8>=6.0.0",
+    "mkdocs>=1.5.0",
+    "mkdocs-material>=9.0.0",
+    "mkdocstrings[python]>=0.24.0",
+    "build>=1.2.2.post1",
+    "twine>=6.1.0",
+]
+
+[tool.rye.scripts]
+# 开发工具
+test = "pytest"
+format = "black ."
+format-check = "black --check ."
+lint = "flake8 ."
+sort = "isort ."
+
+# 文档构建
+docs-build = "mkdocs build"
+docs-serve = "mkdocs serve"
+
+# 构建和发布
+build = "python -m build"
+clean = "rm -rf dist/ build/ *.egg-info/"
+
+# PyPI 发布
+upload-test = "twine upload --repository testpypi dist/*"
+upload = "twine upload dist/*"
+
+[project.urls]
+Homepage = "https://github.com/your-username/mvcgen"
+Documentation = "https://your-username.github.io/mvcgen"
+Repository = "https://github.com/your-username/mvcgen.git"
+Issues = "https://github.com/your-username/mvcgen/issues"
+Changelog = "https://github.com/your-username/mvcgen/releases"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mvcgen"]
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "W503"] 
